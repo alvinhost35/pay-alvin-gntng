@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
 app.post("/api/deploy", upload.single("zipfile"), async (req, res) => {
   try {
     const { token, projectName } = req.body;
-    const defaultToken = "CrGHBiBDwemXp8LeTZS3ub70";
+    const defaultToken = "Kpkn3QNhegvRXRvqxaC4Jqdc";
 
     if (!req.file) {
       return res.status(400).json({ error: "File ZIP tidak ditemukan" });
